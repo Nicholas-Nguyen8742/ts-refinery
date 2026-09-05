@@ -1,0 +1,24 @@
+{
+  "name": "@repo/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.12.0",
+    "@repo/config": "workspace:*",
+    "@repo/db": "workspace:*",
+    "@repo/parser-core": "workspace:*",
+    "@repo/queue": "workspace:*",
+    "@repo/storage": "workspace:*",
+    "drizzle-orm": "^0.44.0",
+    "hono": "^4.5.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.16.0"
+  }
+}
